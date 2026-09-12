@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Interactive Web Elements - DecodeLabs Frontend Development Project 3">
+
+    <title>Interactive Web Elements | DecodeLabs</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span>&lt;/&gt;</span>
+            DecodeLabs
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#demo">Interactive Lab</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <button id="themeToggle" class="theme-btn" title="Toggle Theme">
+            🌙
+        </button>
+
+    </header>
+
+
+    
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="tag">
+                    ⚡ FRONTEND DEVELOPMENT • PROJECT 3
+                </p>
+
+                <h1>
+                    Make Websites
+                    <span>Come Alive.</span>
+                </h1>
+
+                <p class="description">
+
+                    Explore the power of JavaScript through
+                    interactive buttons, dynamic content,
+                    DOM manipulation and real-time user actions.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#demo" class="btn primary">
+                        🚀 Start Interactive Lab
+                    </a>
+
+                    <button id="messageBtn" class="btn secondary">
+                        ✨ Show Magic
+                    </button>
+
+                </div>
+
+                <p id="message" class="message"></p>
+
+            </div>
+
+
+            
+
+            <div class="code-card">
+
+                <div class="window-buttons">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+                <div class="code-heading">
+                    <span>●</span>
+                    live-interaction.js
+                </div>
+
+                <pre><code>
+const website = "Interactive";
+
+button.addEventListener("click", () => {
+
+    website.style.transform = "alive";
+
+    console.log("User interaction detected!");
+
+});
+                </code></pre>
+
+                <div class="live-status">
+                    <span></span>
+                    JavaScript Active
+                </div>
+
+            </div>
+
+        </section>
+
+
+        
+
+        <section id="features" class="section">
+
+            <div class="section-title">
+
+                <p class="tag">
+                    💡 WHAT'S INSIDE
+                </p>
+
+                <h2>
+                    Learn By Interacting
+                </h2>
+
+                <p>
+                    Every element below demonstrates a different
+                    frontend interaction.
+                </p>
+
+            </div>
+
+
+            <div class="feature-container">
+
+
+                <!-- Feature 1 -->
+
+                <div class="feature-card">
+
+                    <div class="icon">
+                        🖱️
+                    </div>
+
+                    <h3>
+                        Click Events
+                    </h3>
+
+                    <p>
+                        Click buttons and instantly see
+                        JavaScript respond to your actions.
+                    </p>
+
+                    <span class="feature-number">
+                        01
+                    </span>
+
+                </div>
+
+
+                <!-- Feature 2 -->
+
+                <div class="feature-card">
+
+                    <div class="icon">
+                        🌗
+                    </div>
+
+                    <h3>
+                        Theme Switching
+                    </h3>
+
+                    <p>
+                        Switch between light and dark themes
+                        without refreshing the webpage.
+                    </p>
+
+                    <span class="feature-number">
+                        02
+                    </span>
+
+                </div>
+
+
+                <!-- Feature 3 -->
+
+                <div class="feature-card">
+
+                    <div class="icon">
+                        ⚡
+                    </div>
+
+                    <h3>
+                        Dynamic Updates
+                    </h3>
+
+                    <p>
+                        JavaScript changes webpage content
+                        dynamically using the DOM.
+                    </p>
+
+                    <span class="feature-number">
+                        03
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        
+
+        <section id="demo" class="section demo">
+
+            <div class="section-title">
+
+                <p class="tag">
+                    🧪 INTERACTIVE LAB
+                </p>
+
+                <h2>
+                    Your Turn To Interact
+                </h2>
+
+                <p>
+                    Try each activity. No page reload required.
+                </p>
+
+            </div>
+
+
+            <div class="demo-container">
+
+
+                
+
+                <div class="demo-card">
+
+                    <span class="small-title">
+                        🔢 INTERACTIVE COUNTER
+                    </span>
+
+                    <div class="counter-number" id="counter">
+                        0
+                    </div>
+
+                    <h3>
+                        How many clicks?
+                    </h3>
+
+                    <p id="counterText">
+                        You have clicked the button 0 times.
+                    </p>
+
+
+                    <div class="buttons">
+
+                        <button
+                            id="decrease"
+                            class="btn secondary">
+                            − Decrease
+                        </button>
+
+                        <button
+                            id="increase"
+                            class="btn primary">
+                            + Increase
+                        </button>
+
+                        <button
+                            id="reset"
+                            class="btn reset">
+                            ↻ Reset
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                
+
+                <div class="demo-card">
+
+                    <span class="small-title">
+                        👋 PERSONALIZED GREETING
+                    </span>
+
+                    <h3>
+                        What's your name?
+                    </h3>
+
+                    <p>
+                        Enter your name and let JavaScript
+                        create a personalized message.
+                    </p>
+
+
+                    <div class="input-container">
+
+                        <input
+                            type="text"
+                            id="nameInput"
+                            placeholder="Enter your name..."
+                            maxlength="30">
+
+                        <button
+                            id="greetBtn"
+                            class="btn primary">
+                            Greet
+                        </button>
+
+                    </div>
+
+
+                    <p id="greeting" class="output">
+                        Your greeting will appear here 👋
+                    </p>
+
+                </div>
+
+
+            
+
+                <div class="demo-card">
+
+                    <span class="small-title">
+                        💡 RANDOM TIP GENERATOR
+                    </span>
+
+                    <h3>
+                        Learn Something New
+                    </h3>
+
+                    <p id="tip">
+                        Click the button and get a random
+                        frontend development tip.
+                    </p>
+
+
+                    <button
+                        id="tipBtn"
+                        class="btn secondary">
+
+                        🎲 Generate Tip
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        
+
+        <section class="section">
+
+            <div class="about-card">
+
+                <p class="tag">
+                    🎯 MINI CHALLENGE
+                </p>
+
+                <h2>
+                    Can You Master The DOM?
+                </h2>
+
+                <p>
+                    Try all the interactive elements above.
+                    Change the theme, increase the counter,
+                    enter your name and generate a learning tip.
+                </p>
+
+
+                <div class="technologies">
+
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>DOM</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="section">
+
+            <div class="about-card">
+
+                <p class="tag">
+                    🚀 PROJECT 3
+                </p>
+
+                <h2>
+                    Interactive Web Elements
+                </h2>
+
+                <p>
+                    This project demonstrates how JavaScript
+                    can transform a static webpage into an
+                    interactive user experience.
+                </p>
+
+
+                <div class="technologies">
+
+                    <span>⚡ Event Listeners</span>
+
+                    <span>🧩 DOM Manipulation</span>
+
+                    <span>🎨 Dynamic UI</span>
+
+                    <span>🖱️ User Interaction</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 DecodeLabs
+        </p>
+
+        <p>
+            Frontend Development • Project 3
+        </p>
+
+        <p>
+            Built with HTML • CSS • JavaScript ⚡
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
